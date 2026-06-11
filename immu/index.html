@@ -286,6 +286,30 @@
     body{padding-bottom:76px}
     .section{padding:44px 0}
   }
+  
+
+  /* Ver.2 image-led sale page additions */
+  .image-led{background:#fff}
+  .image-led.alt{background:var(--tint-green2)}
+  .image-stack{display:grid;gap:26px;max-width:960px;margin:30px auto 0}
+  .image-stack.two{grid-template-columns:repeat(2,1fr);max-width:1040px}
+  .image-stack.three{grid-template-columns:repeat(3,1fr);max-width:1040px}
+  .image-card{background:#fff;border-radius:var(--radius-card);box-shadow:var(--shadow-card);overflow:hidden;border:1px solid #eef1f6}
+  .image-card img{width:100%;height:auto;object-fit:contain;background:#fff}
+  .benefit-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px;text-align:left}
+  .benefit-mini{background:#fff;border:1px solid #e5f3eb;border-radius:16px;padding:18px;box-shadow:var(--shadow-sm)}
+  .benefit-mini b{display:block;color:var(--heading);font-family:var(--font-head);font-size:1.02rem;margin-bottom:6px}
+  .benefit-mini span{color:#40506b;font-size:.92rem;line-height:1.55}
+  .review-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+  .review-gallery .imgslot{box-shadow:var(--shadow-sm)}
+  .promo-gallery{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;align-items:start;margin-top:22px}
+  .promo-side{display:grid;gap:16px}
+  .section-note{font-size:.92rem;color:#647084;margin-top:10px;line-height:1.65}
+  @media (max-width:860px){
+    .image-stack.two,.image-stack.three,.benefit-strip,.review-gallery,.promo-gallery{grid-template-columns:1fr}
+    .review-gallery{gap:14px}
+  }
+
   </style>
 </head>
 <body>
@@ -293,21 +317,20 @@
 <header class="topbar">
   <div class="wrap">
     <a href="#order" class="brand" aria-label="Promom"><img src="logo.png" alt="Promom — วิตามินเสริมภูมิคุ้มกันเด็ก"></a>
-    <a href="#order" class="btn btn-outline-w" data-line><span class="ln">สั่งซื้อ / แชท LINE</span></a>
+    <a href="#order" class="btn btn-outline-w" data-line><span class="ln">รับโปร / แชท LINE</span></a>
   </div>
 </header>
-
 
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy reveal">
       <span class="eyebrow">วิตามินเสริมภูมิคุ้มกันเด็ก</span>
       <h1>ลูกป่วยบ่อย<br><span class="o">ภูมิแพ้ไม่หายสักที?</span></h1>
-      <p class="lead"><strong>Multi-IMMU 24 / 24+ ดูแลภูมิคุ้มกันลูกแบบครบกลไก ลดโอกาสติดเชื้อ ลดความรุนแรง ลดระยะเวลาเจ็บป่วย และลดภูมิแพ้</strong></p>
-      <span class="sub">พร้อมงานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาฯ</span>
+      <p class="lead"><strong>Multi-IMMU 24 / 24+ ดูแลภูมิคุ้มกันครบกลไก ลดโอกาสติดเชื้อ ลดความรุนแรง ลดระยะเวลาเจ็บป่วย และลดภูมิแพ้</strong></p>
+      <span class="sub">ดูแลครบทั้งทางเดินหายใจ ลำไส้ เม็ดเลือดขาว และการอักเสบ</span>
       <div class="cta-row">
         <a href="#order" class="btn" data-line><span class="ln">รับโปรซื้อ 1 แถม 1</span></a>
-        <a href="https://promom.co.th/" class="btn btn-ghost" target="_blank" rel="noopener">Official Website</a>
+        <a href="#research" class="btn btn-ghost">ดูงานวิจัยจุฬาฯ</a>
       </div>
     </div>
     <div class="hero-figure reveal">
@@ -324,152 +347,68 @@
   <div class="wrap">
     <div class="figc reveal">
       <figure class="imgslot">
-        <img src="page-02.png" alt="เด็กป่วยบ่อย ติดเชื้อโรคง่าย เป็นหวัดแทบทุกเดือน" onerror="this.parentElement.classList.add('is-missing')">
+        <img src="page-02.png" alt="ลูกป่วยบ่อย ติดเชื้อโรคง่าย เป็นหวัดแทบทุกเดือน" onerror="this.parentElement.classList.add('is-missing')">
         <div class="ph"><span class="ic">🖼️</span><b>ภาพ Pain Point ลูกป่วยบ่อย</b><code>page-02.png</code></div>
       </figure>
     </div>
     <div class="reveal">
       <h2>ลูกป่วยบ่อย ติดเชื้อโรคง่าย<br><span class="hl">เป็นหวัดแทบทุกเดือน</span></h2>
-      <p>ป่วยทีไรอาการหนัก หายช้า หรือถึงขั้นต้องเข้าโรงพยาบาล อาจไม่ใช่เพราะลูกเกิดมาไม่แข็งแรง แต่เพราะภูมิคุ้มกันยังไม่ได้รับการดูแลให้ครบกลไก</p>
+      <p>ป่วยแล้วอาการหนัก หายช้า หรือถึงขั้นต้องเข้าโรงพยาบาล อาจไม่ใช่เพราะลูกเกิดมาไม่แข็งแรง แต่เพราะยังไม่ได้รับการดูแลภูมิคุ้มกันให้ครบกลไก</p>
     </div>
   </div>
 </section>
 
 <section class="section causes">
   <div class="wrap center">
-    <span class="kicker reveal">เข้าใจภูมิคุ้มกันให้ถูกจุด</span>
+    <span class="kicker reveal">สาเหตุที่พ่อแม่มักมองข้าม</span>
     <h2 class="h2 reveal">ภูมิคุ้มกันไม่ได้มีแค่ “ด่านเดียว”</h2>
-    <p class="lead-muted reveal">ระบบภูมิคุ้มกันทำงานร่วมกันหลายส่วน ทั้งเกราะป้องกันด่านหน้าในทางเดินหายใจและลำไส้ เซลล์เม็ดเลือดขาวที่คอยกำจัดเชื้อ และสารต้านการอักเสบที่ช่วยไม่ให้ร่างกายเสียหายเกินไป</p>
-    <div class="cards" style="text-align:left">
-      <div class="card c-dha reveal">
-        <div class="cap"><span class="badge b-dha">🫁</span><h3>เกราะป้องกันทางเดินหายใจ</h3></div>
-        <p>ทางเดินหายใจเป็นด่านแรกที่เจอเชื้อโรค ฝุ่น และมลพิษ หากด่านนี้อ่อนแอ ลูกอาจติดเชื้อง่าย อาการลงปอดง่าย หรือฟื้นตัวช้า</p>
-      </div>
-      <div class="card c-iron reveal">
-        <div class="cap"><span class="badge b-iron">🛡️</span><h3>เซลล์เม็ดเลือดขาว</h3></div>
-        <p>เม็ดเลือดขาวคือกำลังหลักในการต่อสู้เชื้อโรค เมื่อร่างกายได้รับการดูแลไม่ครบ ภูมิอาจตอบสนองได้ไม่เต็มที่ ทำให้ป่วยง่ายและหายช้า</p>
-      </div>
-      <div class="card c-sleep reveal">
-        <div class="cap"><span class="badge b-sleep">🦠</span><h3>จุลินทรีย์ดีในลำไส้</h3></div>
-        <p>ลำไส้เป็นฐานสำคัญของภูมิคุ้มกัน การดูแลสมดุลจุลินทรีย์ดีช่วยให้ร่างกายพร้อมรับมือเชื้อโรคได้ดีขึ้นในภาพรวม</p>
-      </div>
-      <div class="card c-gut reveal">
-        <div class="cap"><span class="badge b-gut">🌿</span><h3>การอักเสบที่สมดุล</h3></div>
-        <p>การอักเสบที่มากเกินไปอาจทำให้อาการป่วยรุนแรงขึ้นหรือหายช้า การดูแลภูมิที่ดีจึงต้องช่วยให้ร่างกายตอบสนองอย่างสมดุล</p>
-      </div>
+    <p class="lead-muted reveal">ภูมิคุ้มกันทำงานร่วมกันหลายระบบ ทั้งเกราะป้องกันด่านหน้าในทางเดินหายใจและลำไส้ เซลล์เม็ดเลือดขาวที่คอยกำจัดเชื้อ และสารต้านการอักเสบที่ช่วยไม่ให้ร่างกายเสียหายเกินไป</p>
+    <div class="image-stack two">
+      <figure class="imgslot reveal"><img src="page-03.png" alt="สาเหตุที่ลูกป่วยบ่อย เพราะภูมิคุ้มกันต้องดูแลครบกลไก" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>ภาพอธิบายสาเหตุ</b><code>page-03.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-04.png" alt="Multi-IMMU 24/24+ ออกแบบมาเพื่อดูแลภูมิคุ้มกันครบกลไก" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>ภาพดูแลครบกลไก</b><code>page-04.png</code></div></figure>
     </div>
   </div>
 </section>
 
 <section class="section shift">
   <div class="wrap reveal">
-    <span class="kicker">ทางออกที่ครบกว่า</span>
-    <h2>Multi-IMMU 24 และ Multi-IMMU 24+<br><span class="o">ดูแลภูมิคุ้มกันลูกแบบ 360 องศา</span></h2>
-    <p>ไม่ได้โฟกัสเพียงสารอาหารเดี่ยว ๆ แต่ดูแลครบทั้งเกราะป้องกัน ลำไส้ จุลินทรีย์ดี วิตามินและแร่ธาตุสำคัญ</p>
+    <span class="kicker">ดูแลครบกลไก 360°</span>
+    <h2>Multi-IMMU 24 และ Multi-IMMU 24+<br><span class="o">ออกแบบมาเพื่อดูแลร่างกายลูกน้อยแบบ 360 องศา</span></h2>
+    <p>การเสริมสารอาหารเดี่ยว ๆ อาจไม่พอสำหรับภูมิคุ้มกันที่ซับซ้อน จึงต้องดูแลครบทั้งเกราะป้องกัน เยื่อบุลำไส้ จุลินทรีย์ดี วิตามินและแร่ธาตุสำคัญ</p>
   </div>
 </section>
 
-<section class="section mech">
-  <div class="wrap">
-    <div class="figc reveal">
-      <figure class="imgslot">
-        <img src="page-03.png" alt="Multi-IMMU 24/24+ ดูแลภูมิคุ้มกันครบกลไก 360 องศา" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพกลไกภูมิคุ้มกัน 360 องศา</b><code>page-03.png</code></div>
-      </figure>
+<section class="section image-led">
+  <div class="wrap center">
+    <span class="kicker reveal">4 ผลลัพธ์ที่พ่อแม่ต้องการ</span>
+    <h2 class="h2 reveal">ช่วยให้ลูกป่วยยาก หายง่าย และรับมือสิ่งแวดล้อมได้ดีขึ้น</h2>
+    <div class="benefit-strip reveal">
+      <div class="benefit-mini"><b>ลดโอกาสเชื้อลงปอด</b><span>อาการเบา ลดโอกาสเข้าโรงพยาบาล</span></div>
+      <div class="benefit-mini"><b>ต่อสู้เชื้อโรคได้ดี</b><span>ติดเชื้อยาก หายป่วยเร็วขึ้น</span></div>
+      <div class="benefit-mini"><b>สมดุลลำไส้</b><span>เติมฐานภูมิคุ้มกันให้ลูกป่วยยาก</span></div>
+      <div class="benefit-mini"><b>ลดภูมิแพ้</b><span>รับมือฝุ่น PM2.5 ได้แข็งแรงขึ้น</span></div>
     </div>
-    <div class="reveal">
-      <span class="kicker">ออกแบบมาเพื่อเด็กป่วยบ่อย</span>
-      <h2 class="h2">ครบกลไก เพื่อให้ลูกป่วยยาก หายง่ายขึ้น</h2>
-      <div class="mech-list">
-        <div class="mech-item"><span class="n">1</span><div><h4>ลดโอกาสเชื้อลงปอด</h4><p>ช่วยดูแลด่านป้องกันสำคัญของร่างกาย ลดโอกาสอาการลุกลามและลดโอกาสเข้าโรงพยาบาล</p></div></div>
-        <div class="mech-item"><span class="n">2</span><div><h4>ร่างกายต่อสู้เชื้อโรคได้ดี</h4><p>เสริมให้ภูมิคุ้มกันทำงานพร้อมขึ้น ติดเชื้อยากขึ้น และฟื้นตัวได้ไวขึ้น</p></div></div>
-        <div class="mech-item"><span class="n">3</span><div><h4>สร้างสมดุลลำไส้และเติมภูมิคุ้มกัน</h4><p>ดูแลลำไส้และจุลินทรีย์ดี ซึ่งเป็นฐานสำคัญของภูมิคุ้มกันเด็ก</p></div></div>
-        <div class="mech-item"><span class="n">4</span><div><h4>ลดภูมิแพ้ รับมือ PM2.5</h4><p>ช่วยให้ร่างกายรับมือฝุ่น มลพิษ และการอักเสบได้อย่างแข็งแรงและสมดุล</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section ingredient ing-cream">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="pill">Benefit 01</span>
-      <h2>ลดโอกาสเชื้อลงปอด อาการเบา ลดโอกาสเข้าโรงพยาบาล</h2>
-      <p>สำหรับเด็กที่ป่วยทีไรอาการหนัก หรือเป็นหวัดแล้วลงหลอดลมง่าย การดูแลภูมิคุ้มกันด่านหน้าและเซลล์ปอดให้แข็งแรง เป็นจุดเริ่มต้นสำคัญที่ช่วยให้ร่างกายรับมือได้ดีขึ้น</p>
-      <div class="stat-row">
-        <div class="stat"><b>🫁</b><span>ดูแลเซลล์ปอด</span></div>
-        <div class="stat"><b>🛡️</b><span>เสริมด่านป้องกัน</span></div>
-        <div class="stat"><b>↓</b><span>ลดโอกาสอาการหนัก</span></div>
-      </div>
-    </div>
-    <div class="figc reveal">
-      <figure class="imgslot">
-        <img src="page-04.png" alt="ลดโอกาสเชื้อลงปอด อาการเบา ลดโอกาสเข้าโรงพยาบาล" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพปกป้องเซลล์ปอด</b><code>page-04.png</code></div>
-      </figure>
+    <div class="image-stack">
+      <figure class="imgslot reveal"><img src="page-05.png" alt="ลดโอกาสเชื้อลงปอด อาการเบา ลดโอกาสเข้าโรงพยาบาล" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Benefit 1</b><code>page-05.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-06.png" alt="ร่างกายต่อสู้เชื้อโรคได้ดี ติดเชื้อยาก หายป่วยเร็ว" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Benefit 2</b><code>page-06.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-07.png" alt="สร้างสมดุลลำไส้และเติมภูมิคุ้มกัน ให้ลูกป่วยยาก หายง่าย" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Benefit 3</b><code>page-07.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-08.png" alt="อาการภูมิแพ้ลดลง รับมือฝุ่น PM2.5 ได้แข็งแรง" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Benefit 4</b><code>page-08.png</code></div></figure>
     </div>
   </div>
 </section>
 
-<section class="section ingredient ing-sky rev">
-  <div class="wrap">
-    <div class="figc reveal">
-      <figure class="imgslot">
-        <img src="page-05.png" alt="ร่างกายต่อสู้เชื้อโรคได้ดี ติดเชื้อยาก หายป่วยเร็ว" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🛡️</span><b>ภาพภูมิคุ้มกันแข็งแรง</b><code>page-05.png</code></div>
-      </figure>
-    </div>
-    <div class="reveal">
-      <span class="pill">Benefit 02</span>
-      <h2>ร่างกายต่อสู้เชื้อโรคได้ดี ติดเชื้อยาก หายป่วยเร็ว</h2>
-      <p>เมื่อภูมิคุ้มกันได้รับการดูแลครบหลายระบบ ร่างกายจะพร้อมรับมือเชื้อโรคได้ดีขึ้น ลดโอกาสติดเชื้อง่าย และช่วยให้ช่วงป่วยผ่านไปได้ไวขึ้น</p>
-      <div class="stat-row">
-        <div class="stat"><b>360°</b><span>ดูแลครบกลไก</span></div>
-        <div class="stat"><b>Fast</b><span>ฟื้นตัวไวขึ้น</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section ingredient ing-mint">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="pill">Benefit 03-04</span>
-      <h2>สร้างสมดุลลำไส้ ลดภูมิแพ้ และรับมือฝุ่น PM2.5</h2>
-      <p>Multi-IMMU 24/24+ ช่วยดูแลสมดุลลำไส้ เติมภูมิคุ้มกัน และช่วยให้ร่างกายรับมือกับภูมิแพ้ ฝุ่น และมลพิษได้ดีขึ้น เหมาะกับเด็กที่ป่วยซ้ำง่ายหรือภูมิแพ้เป็นประจำ</p>
-      <div class="stat-row">
-        <div class="stat"><b>Gut</b><span>ลำไส้สมดุล</span></div>
-        <div class="stat"><b>PM2.5</b><span>รับมือมลพิษ</span></div>
-        <div class="stat"><b>Allergy</b><span>ลดภูมิแพ้</span></div>
-      </div>
-    </div>
-    <div class="figc reveal">
-      <figure class="imgslot">
-        <img src="page-06.png" alt="สร้างสมดุลลำไส้และเติมภูมิคุ้มกัน ลดภูมิแพ้ รับมือ PM2.5" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพสมดุลลำไส้ ภูมิแพ้ PM2.5</b><code>page-06.png</code></div>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section trust">
+<section class="section trust" id="research">
   <div class="wrap center">
     <span class="kicker reveal" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:var(--gold)">งานวิจัยรองรับ</span>
     <h2 class="h2 reveal">พิสูจน์คุณภาพด้วยงานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</h2>
-    <p class="lead-muted reveal">ผลวิจัยชี้ว่า Multi-IMMU 24 และ Multi-IMMU 24+ ช่วยปกป้องเซลล์ปอดจากเชื้อโรค มลพิษ และลดการอักเสบในเซลล์เม็ดเลือดขาว</p>
-    <figure class="imgslot reveal" style="margin-top:28px;max-width:760px;margin-left:auto;margin-right:auto">
-      <img src="page-07.png" alt="งานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย" onerror="this.parentElement.classList.add('is-missing')">
-      <div class="ph"><span class="ic">🖼️</span><b>ภาพงานวิจัยจุฬาฯ</b><code>page-07.png</code></div>
-    </figure>
+    <p class="lead-muted reveal">ผลวิจัยชี้ชัด Multi-IMMU 24 และ Multi-IMMU 24+ ช่วยปกป้องเซลล์ปอดจากเชื้อโรค มลพิษ และลดการอักเสบในเซลล์เม็ดเลือดขาว</p>
+    <div class="image-stack two">
+      <figure class="imgslot reveal"><img src="page-09.png" alt="งานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>ภาพงานวิจัยจุฬาฯ</b><code>page-09.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-10.png" alt="ผลวิจัย Multi-IMMU 24/24+ ปกป้องเซลล์ปอดและลดการอักเสบ" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>ผลวิจัย</b><code>page-10.png</code></div></figure>
+    </div>
     <div class="award-grid" style="text-align:left">
-      <div class="award-card reveal">
-        <h4><span class="chk">✔</span> ปกป้องเซลล์ปอดจากเชื้อโรคและมลพิษ</h4>
-        <p>สนับสนุนการดูแลภูมิคุ้มกันด่านสำคัญที่เด็กต้องเจอทุกวัน ทั้งเชื้อโรคและฝุ่นมลพิษ</p>
-      </div>
-      <div class="award-card reveal">
-        <h4><span class="chk">✔</span> ลดการอักเสบในเซลล์เม็ดเลือดขาว</h4>
-        <p>ช่วยให้การตอบสนองของภูมิคุ้มกันสมดุลมากขึ้น ไม่อ่อนแอ และไม่อักเสบเกินจำเป็น</p>
-      </div>
+      <div class="award-card reveal"><h4><span class="chk">✔</span> ปกป้องเซลล์ปอดจากเชื้อโรคและมลพิษ</h4><p>เสริมความน่าเชื่อถือให้กับการดูแลภูมิคุ้มกันด่านสำคัญที่ลูกเจอทุกวัน</p></div>
+      <div class="award-card reveal"><h4><span class="chk">✔</span> ลดการอักเสบในเซลล์เม็ดเลือดขาว</h4><p>สนับสนุนให้ระบบภูมิคุ้มกันตอบสนองอย่างสมดุล ไม่อ่อนแอและไม่อักเสบเกินจำเป็น</p></div>
     </div>
   </div>
 </section>
@@ -478,26 +417,25 @@
   <div class="wrap center">
     <span class="kicker reveal">แม่ทั่วไทยไว้ใจ</span>
     <h2 class="h2 reveal">เป็นที่รักของแม่และเด็กทั่วไทย ด้วยยอดซื้อซ้ำสูงสุด!</h2>
-    <p class="lead-muted reveal">แม่ ๆ เลือก Multi-IMMU 24/24+ เพื่อดูแลลูกที่ป่วยบ่อย ภูมิแพ้บ่อย และต้องการเสริมภูมิคุ้มกันให้ครบกลไก</p>
-    <div class="proof-grid">
-      <figure class="imgslot reveal">
-        <img src="page-08.png" alt="เด็กและครอบครัวที่ใช้ Multi-IMMU 24/24+" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพเด็กและครอบครัว</b><code>page-08.png</code></div>
-      </figure>
-      <figure class="imgslot reveal">
-        <img src="page-09.png" alt="รีวิวจากคุณแม่ที่ใช้ Multi-IMMU 24/24+" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพรีวิวจากคุณแม่</b><code>page-09.png</code></div>
-      </figure>
+    <p class="lead-muted reveal">รวมรีวิวและเสียงตอบรับจากครอบครัวที่เลือกดูแลภูมิคุ้มกันลูกด้วย Multi-IMMU 24/24+</p>
+    <div class="image-stack two">
+      <figure class="imgslot reveal"><img src="page-11.png" alt="เป็นที่รักของแม่และเด็กทั่วไทย" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Social Proof</b><code>page-11.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-12.png" alt="รีวิวจากคุณแม่ที่ใช้ Multi-IMMU 24/24+" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Review</b><code>page-12.png</code></div></figure>
     </div>
-    <div class="reviews" style="text-align:left">
-      <div class="review reveal">
-        <div class="rv-top"><span class="ava">ค</span><span class="who"><b>คุณแม่ลูกวัยอนุบาล</b><span>เลือกดูแลภูมิทุกวัน</span></span><span class="stars">★★★★★</span></div>
-        <p>ลูกป่วยบ่อยน้อยลง แม่สบายใจขึ้น เพราะได้ดูแลภูมิหลายกลไกในตัวเดียว</p>
-      </div>
-      <div class="review reveal">
-        <div class="rv-top"><span class="ava">พ</span><span class="who"><b>คุณแม่ลูกภูมิแพ้</b><span>ดูแลต่อเนื่องช่วงฝุ่นเยอะ</span></span><span class="stars">★★★★★</span></div>
-        <p>ช่วงฝุ่นเยอะลูกเคยแพ้ง่าย พอดูแลต่อเนื่องรู้สึกว่าอาการเบาลงและฟื้นตัวไวขึ้น</p>
-      </div>
+  </div>
+</section>
+
+<section class="section image-led alt">
+  <div class="wrap center">
+    <span class="kicker reveal">รีวิวแม่จริง</span>
+    <h2 class="h2 reveal">ยิ่งเห็นรีวิว ยิ่งมั่นใจว่าลูกป่วยบ่อยต้องเริ่มดูแลภูมิให้ครบกลไก</h2>
+    <div class="review-gallery">
+      <figure class="imgslot reveal"><img src="page-13.png" alt="รีวิว Multi-IMMU 24/24+ 1" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">⭐</span><b>รีวิว 1</b><code>page-13.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-14.png" alt="รีวิว Multi-IMMU 24/24+ 2" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">⭐</span><b>รีวิว 2</b><code>page-14.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-15.png" alt="รีวิว Multi-IMMU 24/24+ 3" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">⭐</span><b>รีวิว 3</b><code>page-15.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-16.png" alt="รีวิว Multi-IMMU 24/24+ 4" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">⭐</span><b>รีวิว 4</b><code>page-16.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-17.png" alt="รีวิว Multi-IMMU 24/24+ 5" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">⭐</span><b>รีวิว 5</b><code>page-17.png</code></div></figure>
+      <figure class="imgslot reveal"><img src="page-18.png" alt="รีวิว Multi-IMMU 24/24+ 6" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">⭐</span><b>รีวิว 6</b><code>page-18.png</code></div></figure>
     </div>
   </div>
 </section>
@@ -507,11 +445,14 @@
     <div class="reveal">
       <span class="kicker">โปรโมชันพิเศษ</span>
       <h2>ดูแลภูมิคุ้มกันลูกแบบครบกลไก ด้วย <span class="o">Multi-IMMU 24</span> และ <span class="o">Multi-IMMU 24+</span></h2>
-      <p>ในราคา <strong>1,499 บาท</strong> แบบ <strong>ซื้อ 1 แถม 1</strong> — เหมาะสำหรับเด็กป่วยบ่อย เป็นหวัดง่าย ภูมิแพ้บ่อย หรือเจอมลพิษ PM2.5 เป็นประจำ</p>
-      <figure class="imgslot" style="margin-top:20px">
-        <img src="page-10.png" alt="Multi-IMMU 24/24+ โปรซื้อ 1 แถม 1 ราคา 1,499 บาท" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพโปรซื้อ 1 แถม 1</b><code>page-10.png</code></div>
-      </figure>
+      <p>ในราคา <strong>1,499 บาท</strong> แบบ <strong>ซื้อ 1 แถม 1</strong> เหมาะสำหรับเด็กป่วยบ่อย เป็นหวัดง่าย ภูมิแพ้บ่อย หรือเจอฝุ่น PM2.5 เป็นประจำ</p>
+      <div class="promo-gallery">
+        <figure class="imgslot"><img src="page-01.png" alt="Multi-IMMU 24/24+ โปรซื้อ 1 แถม 1" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>ภาพสินค้า</b><code>page-01.png</code></div></figure>
+        <div class="promo-side">
+          <figure class="imgslot"><img src="page-11.png" alt="Multi-IMMU 24/24+ social proof" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Social proof</b><code>page-11.png</code></div></figure>
+          <figure class="imgslot"><img src="page-12.png" alt="รีวิว Multi-IMMU 24/24+" onerror="this.parentElement.classList.add('is-missing')"><div class="ph"><span class="ic">🖼️</span><b>Review</b><code>page-12.png</code></div></figure>
+        </div>
+      </div>
     </div>
     <div class="price-box reveal">
       <span class="tag">ซื้อ 1 แถม 1</span>
@@ -531,11 +472,11 @@
 <section class="section final">
   <div class="wrap reveal">
     <span class="kicker" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:var(--gold)">พร้อมเริ่มดูแลภูมิคุ้มกันลูกแล้ว?</span>
-    <h2>สนใจคลิก เพื่อรับโปรซื้อ 1 แถม 1</h2>
+    <h2>รับโปร Multi-IMMU ซื้อ 1 แถม 1</h2>
     <p>ทักแชทไลน์ Promom รับคำแนะนำจากทีมงาน พร้อมสั่งซื้อได้ทันที</p>
     <figure class="imgslot final-product">
-      <img src="page-11.png" alt="Multi-IMMU 24 และ Multi-IMMU 24+ ดูแลภูมิคุ้มกันลูกครบกลไก" onerror="this.parentElement.classList.add('is-missing')">
-      <div class="ph"><span class="ic">🖼️</span><b>ภาพสินค้า Multi-IMMU 24 และ 24+</b><code>page-11.png</code></div>
+      <img src="page-01.png" alt="Multi-IMMU 24 และ Multi-IMMU 24+ ดูแลภูมิคุ้มกันลูกครบกลไก" onerror="this.parentElement.classList.add('is-missing')">
+      <div class="ph"><span class="ic">🖼️</span><b>ภาพสินค้า Multi-IMMU 24 และ 24+</b><code>page-01.png</code></div>
     </figure>
     <a href="#order" class="btn btn-white" data-line><span class="ln">แชท LINE Promom เลย</span></a>
   </div>
