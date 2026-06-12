@@ -72,7 +72,7 @@
   .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:52px;padding-bottom:58px}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--tint-blue);border:1px solid #cfe0ff;color:var(--blue);font-family:var(--font-head);font-weight:600;font-size:.86rem;padding:7px 16px;border-radius:var(--radius-pill);box-shadow:var(--shadow-sm)}
   .hero h1{font-size:2.6rem;font-weight:700;margin:18px 0 8px;color:var(--heading)}
-  .hero h1 .o{color:var(--green-d)}
+  .hero h1 .o">color:var(--green-d)}
   .hero .lead{font-size:1.15rem;color:#33405e;font-weight:400;max-width:34ch;line-height:1.7}
   .hero .sub{margin-top:12px;color:var(--muted);font-weight:600;display:inline-flex;align-items:center;gap:8px}
   .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;align-items:center}
@@ -154,11 +154,24 @@
   .award-card p{color:#cdd9f3;font-size:.95rem;margin-top:8px;line-height:1.6}
   .chk{color:var(--gold)}
 
-  /* Social proof and Reviews */
+  /* Social proof and Reviews (ปรับแก้ Layout รีวิวต่อกันลงมาเป็นแนวดิ่ง) */
   .social{background:var(--tint-blue3)}
-  .reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:30px}
-  .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:var(--maxw);margin:28px auto 0;align-items:start}
-  .review{background:#fff;border:1px solid #eef1f6;border-radius:var(--radius-card);padding:18px;box-shadow:var(--shadow-card)}
+  .proof-vertical-stack {
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    max-width:760px; /* คุมความกว้างให้อ่านง่ายพอดีสายตา */
+    margin:32px auto 0;
+  }
+  .reviews-vertical-stack {
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    max-width:760px;
+    margin:24px auto 0;
+    text-align:left;
+  }
+  .review{background:#fff;border:1px solid #eef1f6;border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card)}
   .review .rv-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
   .review .ava{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:var(--font-head);font-weight:700}
   .review .who b{display:block;color:var(--heading);font-family:var(--font-head)}
@@ -219,7 +232,7 @@
     .hero h1{font-size:1.85rem}
     .h2,.problem h2,.shift h2,.offer h2,.ingredient h2{font-size:1.55rem}
     .final h2{font-size:1.7rem}
-    .cards,.reviews,.proof-grid,.award-grid{grid-template-columns:1fr}
+    .cards,.award-grid{grid-template-columns:1fr}
     .footer .fcols{grid-template-columns:1fr;gap:24px}
     .topbar .btn{display:none}
     .promo-badge{width:84px;height:84px;top:-14px;right:-10px}
@@ -421,7 +434,8 @@
     <span class="kicker reveal">แม่ทั่วไทยไว้ใจ</span>
     <h2 class="h2 reveal">เป็นที่รักของแม่และเด็กทั่วไทย ด้วยยอดซื้อซ้ำสูงสุด!</h2>
     <p class="lead-muted reveal">แม่ ๆ บอกต่อ เพราะช่วยดูแลภูมิคุ้มกันลูกแบบครบกลไก เหมาะกับเด็กป่วยบ่อย ภูมิแพ้ หรือเจอมลพิษบ่อย</p>
-    <div class="proof-grid">
+    
+    <div class="proof-vertical-stack">
       <figure class="imgslot reveal">
         <img src="page-08.png" alt="คอลลาจรูปเด็กและครอบครัวที่ใช้ Multi-IMMU 24/24+" onerror="this.parentElement.classList.add('is-missing')">
         <div class="ph"><span class="ic">🖼️</span><b>คอลลาจรูปเด็ก/ครอบครัว</b><code>page-08.png</code></div>
@@ -431,7 +445,8 @@
         <div class="ph"><span class="ic">🖼️</span><b>ภาพรีวิวจากคุณแม่</b><code>page-09.png</code></div>
       </figure>
     </div>
-    <div class="reviews" style="text-align:left">
+
+    <div class="reviews-vertical-stack">
       <div class="review reveal">
         <div class="rv-top"><span class="ava">ม</span><span class="who"><b>คุณแม่น้องมิลิน</b><span>ลูกวัย 5 ขวบ</span></span><span class="stars">★★★★★</span></div>
         <p>ลูกป่วยน้อยลงมากค่ะ จากที่เป็นหวัดแทบทุกเดือน ตอนนี้แข็งแรงขึ้น แม่สบายใจขึ้นเยอะ</p>
