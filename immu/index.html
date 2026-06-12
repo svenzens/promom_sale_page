@@ -47,7 +47,7 @@
   .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
   .js .reveal.visible{opacity:1;transform:none}
 
-  /* Buttons — Promom Premium Pill Style */
+  /* Buttons Style */
   .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-head);font-weight:600;font-size:1.02rem;padding:14px 42px;border-radius:var(--radius-pill);border:none;cursor:pointer;color:#fff;background:linear-gradient(180deg,#0e4cc0 0%,#003595 100%);box-shadow:0 10px 24px rgba(0,53,149,.26);outline:1.5px solid rgba(125,168,226,.7);outline-offset:4px;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
   .btn:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 14px 30px rgba(0,53,149,.34)}
   .btn-white{background:#fff;color:var(--blue);outline-color:rgba(255,255,255,.55);box-shadow:0 10px 24px rgba(0,0,0,.18)}
@@ -72,7 +72,7 @@
   .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:52px;padding-bottom:58px}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--tint-blue);border:1px solid #cfe0ff;color:var(--blue);font-family:var(--font-head);font-weight:600;font-size:.86rem;padding:7px 16px;border-radius:var(--radius-pill);box-shadow:var(--shadow-sm)}
   .hero h1{font-size:2.6rem;font-weight:700;margin:18px 0 8px;color:var(--heading)}
-  .hero h1 .o">color:var(--green-d)}
+  .hero h1 .o{color:var(--green-d)}
   .hero .lead{font-size:1.15rem;color:#33405e;font-weight:400;max-width:34ch;line-height:1.7}
   .hero .sub{margin-top:12px;color:var(--muted);font-weight:600;display:inline-flex;align-items:center;gap:8px}
   .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;align-items:center}
@@ -154,13 +154,13 @@
   .award-card p{color:#cdd9f3;font-size:.95rem;margin-top:8px;line-height:1.6}
   .chk{color:var(--gold)}
 
-  /* Social proof and Reviews (ปรับแก้ Layout รีวิวต่อกันลงมาเป็นแนวดิ่ง) */
+  /* Social proof and Reviews (ปรับแก้ Layout รีวิวต่อกันลงมาเป็นแนวดิ่ง Single Column) */
   .social{background:var(--tint-blue3)}
   .proof-vertical-stack {
     display:flex;
     flex-direction:column;
     gap:24px;
-    max-width:760px; /* คุมความกว้างให้อ่านง่ายพอดีสายตา */
+    max-width:760px;
     margin:32px auto 0;
   }
   .reviews-vertical-stack {
