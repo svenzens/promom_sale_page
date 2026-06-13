@@ -56,8 +56,8 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Multi-IMMU 24 กับ 24+ ต่างกันอย่างไร?", "acceptedAnswer": { "@type": "Answer", "text": "Multi-IMMU 24 เหมาะสำหรับเด็กอายุ 1 ปีขึ้นไป ส่วน Multi-IMMU 24+ เหมาะสำหรับเด็กอายุ 3 ปีขึ้นไป ทั้งสองสูตรเป็นวิตามินเสริมภูมิคุ้มกันเด็กที่ออกแบบมาเพื่อดูแลครบกลไก ทั้งทางเดินหายใจ ลำไส้ จุลินทรีย์ดี เม็ดเลือดขาว และการอักเสบ" } },
-      { "@type": "Question", "name": "ทำไมลูกถึงป่วยบ่อย เป็นหวัดง่าย หรือภูมิแพ้บ่อย?", "acceptedAnswer": { "@type": "Answer", "text": "อาจเกี่ยวข้องกับภูมิคุ้มกันหลายระบบ ทั้งเยื่อบุทางเดินหายใจ ลำไส้ จุลินทรีย์ดี เม็ดเลือดขาว และการอักเสบ การดูแลให้ครบกลไกช่วยให้ร่างกายพร้อมรับมือเชื้อโรคได้ดีขึ้น" } },
+      { "@type": "Question", "name": "Multi-IMMU 24 กับ 24+ ต่างกันอย่างไร?", "acceptedAnswer": { "@type": "Answer", "text": "Multi-IMMU 24 เหมาะสำหรับเด็กอายุ 1 ปีขึ้นไป ส่วน Multi-IMMU 24+ เหมาะสำหรับเด็กอายุ 3 ปีขึ้นไป ทั้งสองสูตรเป็นวิตามินเสริมภูมิคุ้มกันเด็กที่ออกแบบมาเพื่อดูแลครบกลไก" } },
+      { "@type": "Question", "name": "ทำไมลูกถึงป่วยบ่อย เป็นหวัดง่าย หรือภูมิแพ้บ่อย?", "acceptedAnswer": { "@type": "Answer", "text": "อาจเกี่ยวข้องกับภูมิคุ้มกันหลายระบบ การดูแลให้ครบกลไกช่วยให้ร่างกายพร้อมรับมือเชื้อโรคได้ดีขึ้น" } },
       { "@type": "Question", "name": "โปรโมชันราคาเท่าไหร่?", "acceptedAnswer": { "@type": "Answer", "text": "ชุดดูแลภูมิคุ้มกันลูกแบบครบกลไก ราคา 1,499 บาท แบบซื้อ 1 แถม 1 รับไปเลย 2 กล่อง" } }
     ]
   }
@@ -87,11 +87,11 @@
   .section{padding:60px 0}
   .center{text-align:center}
 
-  /* Reveal */
+  /* Reveal Effect */
   .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
   .js .reveal.visible{opacity:1;transform:none}
 
-  /* Buttons — Promom framed pill */
+  /* Buttons */
   .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-head);font-weight:600;font-size:1.02rem;padding:14px 42px;border-radius:var(--radius-pill);border:none;cursor:pointer;color:#fff;background:linear-gradient(180deg,#0e4cc0 0%,#003595 100%);box-shadow:0 10px 24px rgba(0,53,149,.26);outline:1.5px solid rgba(125,168,226,.7);outline-offset:4px;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
   .btn:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 14px 30px rgba(0,53,149,.34)}
   .btn-white{background:#fff;color:var(--blue);outline-color:rgba(255,255,255,.55);box-shadow:0 10px 24px rgba(0,0,0,.18)}
@@ -137,12 +137,12 @@
   .imgslot .ph b{font-family:var(--font-head);font-weight:700;font-size:1rem;color:var(--blue)}
   .imgslot .ph code{font-size:.78rem;background:#fff;border:1px solid #cfe0ff;color:var(--blue);padding:2px 8px;border-radius:7px}
 
-  /* Section heading */
+  /* Headings */
   .kicker{display:inline-block;font-family:var(--font-head);font-weight:600;color:var(--blue);background:var(--tint-blue);border:1px solid #cfe0ff;padding:6px 16px;border-radius:var(--radius-pill);font-size:.9rem;margin-bottom:14px}
   .h2{font-size:1.95rem;color:var(--heading);font-weight:700}
   .lead-muted{color:var(--muted);font-size:1.05rem;font-weight:400;max-width:60ch;margin:12px auto 0;line-height:1.7}
 
-  /* Problem band */
+  /* Problem section */
   .problem{background:linear-gradient(150deg,#003595,#013ba4);color:#fff;position:relative;overflow:hidden}
   .problem::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(76,199,100,.16);right:-140px;top:-120px}
   .problem .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
@@ -151,20 +151,18 @@
   .problem p{color:#d7e3f7;font-size:1.1rem;margin-top:14px;font-weight:400;line-height:1.7}
   .problem .imgslot{box-shadow:0 20px 50px rgba(0,0,0,.3)}
 
-  /* Causes grid */
+  /* Causes Grid */
   .causes{background:var(--tint-blue3)}
   .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:34px}
   .card{background:#fff;border:1px solid #eef1f6;border-radius:var(--radius-card);padding:26px 24px;box-shadow:var(--shadow-card);transition:transform .2s ease,box-shadow .2s ease}
   .card:hover{transform:translateY(-4px)}
-  .card.c-dha{background:var(--tint-cream)} .card.c-iron{background:var(--tint-red)}
-  .card.c-sleep{background:var(--tint-blue)} .card.c-gut{background:var(--tint-green)}
   .card .cap{display:flex;align-items:center;gap:13px;margin-bottom:10px}
   .card .badge{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;color:#fff;flex:0 0 auto}
   .b-dha{background:var(--blue)} .b-iron{background:var(--red)} .b-sleep{background:var(--blue-d)} .b-gut{background:var(--green-d)}
   .card h3{font-size:1.2rem;color:var(--heading)}
   .card p{color:#41506b;font-size:.98rem;margin-top:4px;line-height:1.65}
 
-  /* Shift */
+  /* Shift Banner */
   .shift{background:linear-gradient(135deg,var(--tint-blue),var(--tint-blue2));text-align:center}
   .shift h2{font-size:1.95rem;color:var(--heading);font-weight:700}
   .shift h2 .o{color:var(--green-d)}
@@ -178,7 +176,7 @@
   .mech-item h4{color:var(--heading);font-size:1.05rem}
   .mech-item p{color:#41506b;font-size:.95rem;margin-top:2px;line-height:1.6}
 
-  /* Ingredient blocks */
+  /* Ingredient Content Blocks */
   .ingredient .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
   .ingredient.rev .figc{order:2}
   .pill{display:inline-flex;align-items:center;gap:9px;background:var(--tint-blue);border:1px solid #cfe0ff;color:var(--blue);font-family:var(--font-head);font-weight:600;padding:7px 16px;border-radius:var(--radius-pill);font-size:.92rem;box-shadow:var(--shadow-sm)}
@@ -188,14 +186,9 @@
   .stat{background:#fff;border:1px solid #e6ecf5;border-radius:14px;padding:14px 18px;min-width:120px;box-shadow:var(--shadow-sm)}
   .stat b{font-family:var(--font-head);font-size:1.45rem;color:var(--heading);display:block;line-height:1.1}
   .stat span{font-size:.85rem;color:var(--muted);font-weight:600}
-  .strain{display:flex;align-items:center;gap:10px;background:var(--tint-green2);border:1px solid #d7f0e3;border-radius:12px;padding:11px 14px;font-weight:600;color:#22503c;font-size:.96rem;margin-bottom:10px}
-  .strain:last-child{margin-bottom:0}
-  .strain .dotg{width:10px;height:10px;border-radius:50%;background:var(--green-d);flex:0 0 auto}
-  .strain-card{background:#fff;border:1px solid #e6ecf5;border-radius:var(--radius-card);padding:26px;box-shadow:var(--shadow-card)}
-  .strain-card h4{color:var(--heading);margin-bottom:16px;font-size:1.15rem;display:flex;align-items:center;gap:8px}
   .ing-cream{background:var(--tint-cream)} .ing-sky{background:var(--tint-blue2)} .ing-mint{background:var(--tint-green2)}
 
-  /* Trust / awards */
+  /* Trust / Quality Certification */
   .trust{background:linear-gradient(150deg,#003595,#013ba4);color:#fff}
   .trust .h2{color:#fff}
   .trust .lead-muted{color:#cdd9f3}
@@ -217,10 +210,7 @@
   .stars{color:#FBBF24;margin-left:auto;font-size:1rem;letter-spacing:1px}
   .review p{color:#41506b;font-size:.97rem;line-height:1.6}
 
-  /* Added Image 12 Section: Product Benefits Overview */
-  .benefits-summary{background:var(--white);padding-top:40px}
-
-  /* Offer */
+  /* Offer Box */
   .offer{background:linear-gradient(150deg,var(--tint-blue),var(--tint-blue2));position:relative;overflow:hidden}
   .offer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;z-index:2}
   .price-box{background:#fff;border-radius:var(--radius-card);padding:30px;box-shadow:var(--shadow-card);text-align:center;border:2px solid #cfe0ff}
@@ -246,7 +236,6 @@
   .footer{background:var(--footer);color:var(--invert);padding:46px 0 30px}
   .footer .fcols{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:30px}
   .footer .fbrand{font-family:var(--font-head);font-weight:700;font-size:1.5rem;color:#fff;margin-bottom:8px;display:flex;align-items:center;gap:10px}
-  .footer .fbrand .dot{width:30px;height:30px;border-radius:8px;background:#fff;color:var(--blue);display:grid;place-items:center;font-weight:800}
   .footer p{color:#cfd9ef;font-size:.95rem;line-height:1.7}
   .footer h4{color:var(--gold);font-family:var(--font-head);font-size:1.05rem;margin-bottom:12px}
   .footer ul{list-style:none}
@@ -256,7 +245,7 @@
   .footer .fcontact b{color:#fff;font-family:var(--font-head)}
   .footer .fbottom{border-top:1px solid rgba(255,255,255,.16);margin-top:30px;padding-top:18px;text-align:center;color:#bcc9e6;font-size:.82rem;line-height:1.7}
 
-  /* Floating LINE chat */
+  /* Floating LINE Action Button */
   .chat-fab{position:fixed;right:20px;bottom:22px;z-index:65;display:flex;align-items:center;gap:10px}
   .chat-bubble{background:#fff;color:var(--blue);font-family:var(--font-head);font-weight:600;font-size:.9rem;padding:9px 15px;border-radius:16px 16px 4px 16px;box-shadow:0 6px 18px rgba(0,0,0,.18);max-width:180px;line-height:1.4}
   .chat-bubble small{display:block;color:var(--muted);font-weight:400;font-size:.8rem}
@@ -265,11 +254,11 @@
   .chat-btn svg{width:32px;height:32px;fill:#fff}
   @keyframes fabBounce{0%,100%{transform:translateY(0)}20%{transform:translateY(-8px)}40%{transform:translateY(0)}}
 
-  /* Sticky mobile CTA */
+  /* Sticky mobile bottom bar */
   .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,255,255,.97);box-shadow:0 -8px 24px rgba(0,0,0,.12);padding:10px 16px;display:none;backdrop-filter:blur(6px)}
   .sticky-cta .btn{width:100%}
 
-  /* Responsive */
+  /* Responsive Breakpoints */
   @media (max-width:860px){
     .hero .wrap,.problem .wrap,.mech .wrap,.ingredient .wrap,.offer .wrap{grid-template-columns:1fr}
     .ingredient.rev .figc{order:0}
@@ -322,7 +311,6 @@
   </div>
 </section>
 
-
 <section class="section problem" id="why">
   <div class="wrap">
     <div class="figc reveal">
@@ -338,33 +326,31 @@
   </div>
 </section>
 
-
 <section class="section causes">
   <div class="wrap center">
     <span class="kicker reveal">ภูมิคุ้มกันไม่ได้มีด่านเดียว</span>
     <h2 class="h2 reveal">4 ด่านสำคัญที่ต้องดูแล เพื่อให้ภูมิคุ้มกันลูกแข็งแรง</h2>
     <p class="lead-muted reveal">ภูมิคุ้มกันทำงานร่วมกันหลายระบบ ทั้งทางเดินหายใจ ลำไส้ เม็ดเลือดขาว และการควบคุมการอักเสบ การดูแลจุดเดียวจึงอาจไม่พอ</p>
     <div class="cards" style="text-align:left">
-      <div class="card c-dha reveal">
-        <div class="cap"><span class="badge b-dha">🧠</span><h3>เกราะป้องกันด่านหน้าไม่แข็งแรง</h3></div>
+      <div class="card reveal">
+        <div class="cap"><span class="badge b-dha">🛡️</span><h3>เกราะป้องกันด่านหน้าไม่แข็งแรง</h3></div>
         <p>เมื่อเยื่อบุทางเดินหายใจและลำไส้ไม่แข็งแรง เชื้อโรคและมลพิษจะเข้าสู่ร่างกายได้ง่ายขึ้น ทำให้ลูกป่วยซ้ำ เป็นหวัดบ่อย หรืออาการลากยาวกว่าที่ควร</p>
       </div>
-      <div class="card c-iron reveal">
-        <div class="cap"><span class="badge b-iron">🩸</span><h3>จุลินทรีย์ดีในลำไส้เสียสมดุล</h3></div>
+      <div class="card reveal">
+        <div class="cap"><span class="badge b-iron">🦠</span><h3>จุลินทรีย์ดีในลำไส้เสียสมดุล</h3></div>
         <p>ลำไส้เป็นแหล่งสำคัญของภูมิคุ้มกัน หากจุลินทรีย์ดีไม่สมดุล ระบบภูมิจะตอบสนองได้ไม่ดี เด็กจึงป่วยง่าย ภูมิแพ้ง่าย และฟื้นตัวช้าขึ้น</p>
       </div>
-      <div class="card c-sleep reveal">
-        <div class="cap"><span class="badge b-sleep">🌙</span><h3>เม็ดเลือดขาวต้องการสารอาหารสำคัญ</h3></div>
+      <div class="card reveal">
+        <div class="cap"><span class="badge b-sleep">🩸</span><h3>เม็ดเลือดขาวต้องการสารอาหารสำคัญ</h3></div>
         <p>เม็ดเลือดขาวคือกองกำลังหลักของร่างกาย การเสริมวิตามิน แร่ธาตุ และสารอาหารที่เหมาะสม ช่วยให้ร่างกายต่อสู้เชื้อโรคได้ดีขึ้น</p>
       </div>
-      <div class="card c-gut reveal">
-        <div class="cap"><span class="badge b-gut">🦠</span><h3>ร่างกายอักเสบง่ายเกินไป</h3></div>
+      <div class="card reveal">
+        <div class="cap"><span class="badge b-gut">💥</span><h3>ร่างกายอักเสบง่ายเกินไป</h3></div>
         <p>เมื่อร่างกายอักเสบมากเกินไป อาการป่วยอาจรุนแรงขึ้นหรือหายช้า การดูแลภูมิที่ดีจึงต้องช่วยให้ร่างกายตอบสนองอย่างสมดุล ไม่อ่อนแอและไม่อักเสบเกินจำเป็น</p>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="section shift">
   <div class="wrap reveal">
@@ -374,18 +360,17 @@
   </div>
 </section>
 
-
 <section class="section mech">
   <div class="wrap">
     <div class="figc reveal">
       <figure class="imgslot">
-        <img src="page-03.png" alt="Multi-IMMU 24/9+ ผลิตภัณฑ์เสริมอาหารเสริมภูมิคุ้มกันเด็ก ครบ 4 กลไก" onerror="this.parentElement.classList.add('is-missing')">
+        <img src="page-03.png" alt="Multi-IMMU 24/24+ ผลิตภัณฑ์เสริมอาหารเสริมภูมิคุ้มกันเด็ก ครบ 4 กลไก" onerror="this.parentElement.classList.add('is-missing')">
         <div class="ph"><span class="ic">🖼️</span><b>ภาพกลไกเสริมภูมิคุ้มกัน 360 องศา</b><code>page-03.png</code></div>
       </figure>
     </div>
     <div class="reveal">
       <span class="kicker">ผลิตภัณฑ์เสริมอาหารเสริมภูมิคุ้มกันเด็ก</span>
-      <h2 class="h2">Multi-IMMU 24 / 24+ ดูแลภูมิคุ้มกันเด็ก ครบกลไก<br></h2>
+      <h2 class="h2">Multi-IMMU 24 / 24+ ดูแลภูมิคุ้มกันเด็ก ครบกลไก</h2>
       <div class="mech-list">
         <div class="mech-item"><span class="n">1</span><div><h4>ลดโอกาสเชื้อลงปอด</h4><p>ช่วยดูแลด่านป้องกันสำคัญของร่างกาย ให้ลูกพร้อมรับมือเชื้อโรคและมลพิษ</p></div></div>
         <div class="mech-item"><span class="n">2</span><div><h4>ร่างกายต่อสู้เชื้อโรคได้ดี</h4><p>เติมสารอาหารสำคัญต่อภูมิคุ้มกัน ช่วยให้ติดเชื้อยากขึ้นและฟื้นตัวไวขึ้น</p></div></div>
@@ -399,19 +384,14 @@
 <section class="section ingredient ing-cream">
   <div class="wrap">
     <div class="reveal">
-      <span class="pill">ดูแลทางเดินหายใจ</span>
-      <h2>ดูแลทางเดินหายใจแข็งแรง ด้วย DHA และธาตุเหล็กสูง</h2>
+      <span class="pill">ดูแลทางเดินหายใจแข็งแรง</span>
+      <h2>ดูแลทางเดินหายใจแข็งแรง</h2>
       <p>Multi-IMMU 24/24+ ถูกออกแบบให้ช่วยดูแลภูมิคุ้มกันหลายด่าน ไม่ใช่แค่เสริมสารอาหารเดี่ยว ๆ แต่ช่วยให้ร่างกายลูกพร้อมรับมือเชื้อโรค ลดโอกาสอาการรุนแรง และดูแลการอักเสบอย่างสมดุล</p>
-      <div class="stat-row">
-        <div class="stat"><b>DHA 200<small>mg</small></b><span>ต่อการรับประทาน</span></div>
-        <div class="stat"><b>Fe</b><span>ธาตุเหล็กสูง</span></div>
-        <div class="stat"><b>IQ ↑</b><span>เสริมสติปัญญา</span></div>
-      </div>
     </div>
     <div class="figc reveal">
       <figure class="imgslot">
         <img src="page-04.png" alt="Multi-IMMU 24/24+ ดูแลภูมิคุ้มกันเด็ก" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพภูมิคุ้มกัน / ทางเดินหายใจ</b><code>page-04.png</code></div>
+        <div class="ph"><span class="ic">🖼️</span><b>ภาพดูแลทางเดินหายใจแข็งแรง</b><code>page-04.png</code></div>
       </figure>
     </div>
   </div>
@@ -429,8 +409,6 @@
       <span class="pill">งานวิจัยจุฬาฯ</span>
       <h2>พิสูจน์คุณภาพด้วยงานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</h2>
       <p>ผลวิจัยชี้ว่า Multi-IMMU 24 และ Multi-IMMU 24+ ช่วยปกป้องเซลล์ปอดจากเชื้อโรค มลพิษ และช่วยลดการอักเสบในเซลล์เม็ดเลือดขาว ซึ่งเป็นกลไกสำคัญของภูมิคุ้มกันเด็ก</p>
-      <div class="stat-row">
-      </div>
     </div>
   </div>
 </section>
@@ -445,7 +423,7 @@
     <div class="figc reveal">
       <figure class="imgslot">
         <img src="page-06.png" alt="Probiotics และสารอาหารเสริมภูมิคุ้มกัน ดูแลลำไส้และภูมิแพ้" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>สมดุลลำไส้และภูมิคุ้มกัน</b><code>page-06.png</code></div>
+        <div class="ph"><span class="ic">🖼️</span><b>ภาพสร้างสมดุลลำไส้และเติมภูมิคุ้มกัน</b><code>page-06.png</code></div>
       </figure>
     </div>
   </div>
@@ -458,7 +436,7 @@
     <p class="lead-muted reveal">Multi-IMMU 24/24+ ถูกพัฒนาเพื่อดูแลภูมิคุ้มกันเด็กอย่างครบกลไก พร้อมผลการทดสอบที่ช่วยเสริมความมั่นใจให้พ่อแม่</p>
     <figure class="imgslot reveal" style="margin-top:28px;max-width:760px;margin-left:auto;margin-right:auto">
       <img src="page-07.png" alt="งานวิจัย Multi-IMMU 24/24+ และคุณภาพผลิตภัณฑ์ Promom" onerror="this.parentElement.classList.add('is-missing')">
-      <div class="ph"><span class="ic">🖼️</span><b>ภาพงานวิจัย/คุณภาพ Multi-IMMU</b><code>page-07.png</code></div>
+      <div class="ph"><span class="ic">🖼️</span><b>ภาพการันตีคุณภาพความเชื่อมั่น</b><code>page-07.png</code></div>
     </figure>
     <div class="award-grid" style="text-align:left">
       <div class="award-card reveal">
@@ -481,11 +459,11 @@
     <div class="proof-grid">
       <figure class="imgslot reveal">
         <img src="page-08.png" alt="คอลลาจรูปเด็กและครอบครัวที่ใช้ Multi-IMMU 24/24+" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>คอลลาจรูปเด็ก/ครอบครัว</b><code>page-08.png</code></div>
+        <div class="ph"><span class="ic">🖼️</span><b>คอลลาจภาพผู้ใช้จริง 1</b><code>page-08.png</code></div>
       </figure>
       <figure class="imgslot reveal">
         <img src="page-09.png" alt="รีวิวจากคุณแม่ที่ใช้ Multi-IMMU 24 และ Multi-IMMU 24+" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพรีวิวจากคุณแม่</b><code>page-09.png</code></div>
+        <div class="ph"><span class="ic">🖼️</span><b>ภาพรีวิวผู้ใช้จริง 2</b><code>page-09.png</code></div>
       </figure>
     </div>
     <div class="reviews" style="text-align:left">
@@ -501,27 +479,15 @@
   </div>
 </section>
 
-<section class="section benefits-summary">
-  <div class="wrap center">
-    <span class="kicker reveal">คุณประโยชน์สรุป</span>
-    <h2 class="h2 reveal">เลือกสิ่งที่ดีที่สุดเพื่อด่านภูมิคุ้มกันที่แข็งแรงของลูกน้อย</h2>
-    <p class="lead-muted reveal">ปกป้องอย่างมั่นใจในทุกๆ วันด้วยสารอาหารและส่วนประกอบระดับพรีเมียมที่ผ่านการคิดค้นมาอย่างดี</p>
-    <figure class="imgslot reveal" style="margin-top:28px;max-width:900px;margin-left:auto;margin-right:auto">
-      <img src="page-12.png" alt="สรุปคุณประโยชน์และส่วนประกอบสำคัญของ Multi-IMMU" onerror="this.parentElement.classList.add('is-missing')">
-      <div class="ph"><span class="ic">🖼️</span><b>สรุปคุณประโยชน์และจุดเด่นผลิตภัณฑ์</b><code>page-12.png</code></div>
-    </figure>
-  </div>
-</section>
-
 <section class="section offer" id="order">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">โปรโมชันพิเศษ</span>
-      <h2>ดูแลภูมิคุ้มกันลูกแบบครบกลไก ด้วย <span class="o">Multi-IMMU 24</span> และ <span class="o">Multi-IMMU 24+</span></h2>
-      <p>ในราคา <strong>1,499 บาท</strong> แบบ <strong>ซื้อ 1 แถม 1</strong> — เติมครบทั้ง DHA, ธาตุเหล็ก, L-Theanine และ สมดุลลำไส้และภูมิคุ้มกัน ในชุดเดียว</p>
+      <h2>ดูแลภูมิคุ้มกันลูกแบบครบกลไก ด้วย Multi-IMMU 24 และ Multi-IMMU 24+</h2>
+      <p>ในราคา <strong>1,499 บาท</strong> แบบ <strong>ซื้อ 1 แถม 1</strong> — เติมเต็มการดูแลระบบภูมิคุ้มกันและสมดุลภายในร่างกายลูกรักในชุดเดียว</p>
       <figure class="imgslot" style="margin-top:20px">
         <img src="page-10.png" alt="Multi-IMMU สูตรคุณหมอ โปรซื้อ 1 แถม 1 ราคา 1,499" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพโปรซื้อ 1 แถม 1</b><code>page-10.png</code></div>
+        <div class="ph"><span class="ic">🖼️</span><b>ภาพกล่องโปรโมชัน 1 แถม 1</b><code>page-10.png</code></div>
       </figure>
     </div>
     <div class="price-box reveal">
@@ -546,7 +512,7 @@
     <p>ทักแชทไลน์ Promom รับคำแนะนำจากทีมงาน พร้อมสั่งซื้อได้ทันที</p>
     <figure class="imgslot final-product">
       <img src="page-11.png" alt="Multi-IMMU 24 และ Multi-IMMU 24+ ดูแลภูมิคุ้มกันลูกครบกลไก" onerror="this.parentElement.classList.add('is-missing')">
-      <div class="ph"><span class="ic">🖼️</span><b>ภาพสินค้า Multi-IMMU 24 และ 24+</b><code>page-11.png</code></div>
+      <div class="ph"><span class="ic">🖼️</span><b>ภาพปิดการขายท้ายหน้าเว็บ</b><code>page-11.png</code></div>
     </figure>
     <a href="#order" class="btn btn-white" data-line><span class="ln">แชท LINE Promom เลย</span></a>
   </div>
@@ -576,7 +542,7 @@
       </div>
     </div>
     <div class="fbottom">
-      Professional Mom (Thailand) Co., Ltd. ลขที่ 117 ซอยศูนย์การค้าสาย 4 ถนนสุขุมวิท ตำบลท่าประดู่ อำเภอเมืองระยอง จ.ระยอง 21000<br>
+      Professional Mom (Thailand) Co., Ltd. เลขที่ 117 ซอยศูนย์การค้าสาย 4 ถนนสุขุมวิท ตำบลท่าประดู่ อำเภอเมืองระยอง จ.ระยอง 21000<br>
       © Promom.co.th · ผลิตภัณฑ์เสริมอาหาร ไม่มีผลในการป้องกันหรือรักษาโรค · ผลลัพธ์อาจแตกต่างกันในแต่ละบุคคล
     </div>
   </div>
@@ -588,7 +554,6 @@
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.02.33.07.77.22.88.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.02.9.56 1.1-.46 5.9-3.48 8.05-5.96C21.5 13.4 22 11.83 22 10.13 22 5.64 17.52 2 12 2zM8.2 12.6H6.6c-.24 0-.43-.2-.43-.43V9.05c0-.24.2-.43.43-.43.24 0 .43.2.43.43v2.69H8.2c.24 0 .43.2.43.43 0 .24-.2.43-.43.43zm1.67-.43c0 .24-.2.43-.43.43-.24 0-.43-.2-.43-.43V9.05c0-.24.2-.43.43-.43.24 0 .43.2.43.43v3.12zm3.8 0c0 .19-.12.35-.3.41-.05.02-.1.02-.14.02-.13 0-.26-.06-.34-.17l-1.6-2.18v1.92c0 .24-.2.43-.43.43-.24 0-.43-.2-.43-.43V9.05c0-.19.12-.35.3-.41.04-.01.09-.02.13-.02.13 0 .26.07.34.17l1.61 2.18V9.05c0-.24.2-.43.43-.43.24 0 .43.2.43.43v3.12zm2.84-1.99c.24 0 .43.2.43.43 0 .24-.2.43-.43.43h-1.16v.7h1.16c.24 0 .43.2.43.44 0 .24-.2.43-.43.43h-1.6c-.23 0-.42-.19-.43-.42V9.05c0-.24.2-.43.43-.43h1.6c.24 0 .43.2.43.43 0 .24-.2.44-.43.44h-1.16v.69h1.16z" fill="white"/></svg>
   </a>
 </div>
-
 
 <div class="sticky-cta">
   <a href="#order" class="btn" data-line><span class="ln">สนใจคลิก — สั่งซื้อ 1 แถม 1 (1,499.-)</span></a>
