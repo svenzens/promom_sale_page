@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#003595">
+  <script>document.documentElement.classList.add('js');</script>
 
   <title>Multi-IMMU 24 / 24+ วิตามินเสริมภูมิคุ้มกันเด็ก ลดโอกาสป่วยบ่อย | Promom</title>
   <meta name="description" content="Multi-IMMU 24 และ Multi-IMMU 24+ วิตามินเสริมภูมิคุ้มกันเด็ก ดูแลครบกลไก ลดโอกาสติดเชื้อ ลดความรุนแรง ลดระยะเวลาเจ็บป่วย ลดภูมิแพ้ พร้อมโปรซื้อ 1 แถม 1 เพียง 1,499 บาท">
@@ -50,6 +51,18 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Multi-IMMU 24 กับ 24+ ต่างกันอย่างไร?", "acceptedAnswer": { "@type": "Answer", "text": "Multi-IMMU 24 เหมาะสำหรับเด็กอายุ 1 ปีขึ้นไป ส่วน Multi-IMMU 24+ เหมาะสำหรับเด็กอายุ 3 ปีขึ้นไป ทั้งสองสูตรเป็นวิตามินเสริมภูมิคุ้มกันเด็กที่ออกแบบมาเพื่อดูแลครบกลไก" } },
+      { "@type": "Question", "name": "ทำไมลูกถึงป่วยบ่อย เป็นหวัดง่าย หรือภูมิแพ้บ่อย?", "acceptedAnswer": { "@type": "Answer", "text": "อาจเกี่ยวข้องกับภูมิคุ้มกันหลายระบบ การดูแลให้ครบกลไกช่วยให้ร่างกายพร้อมรับมือเชื้อโรคได้ดีขึ้น" } },
+      { "@type": "Question", "name": "โปรโมชันราคาเท่าไหร่?", "acceptedAnswer": { "@type": "Answer", "text": "ชุดดูแลภูมิคุ้มกันลูกแบบครบกลไก ราคา 1,499 บาท แบบซื้อ 1 แถม 1 รับไปเลย 2 กล่อง" } }
+    ]
+  }
+  </script>
+
   <style>
   :root{
     --blue:#003595; --blue-d:#013ba4; --heading:#003995;
@@ -74,18 +87,9 @@
   .section{padding:60px 0}
   .center{text-align:center}
 
-  /* Safe Reveal Effect: แก้ไขการซ่อนหน้าจอ ป้องกันเว็บขาวสนิท */
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: opacity .6s ease, transform .6s ease;
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .reveal:not(.visible) {
-      opacity: 0;
-      transform: translateY(22px);
-    }
-  }
+  /* Reveal Effect */
+  .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .js .reveal.visible{opacity:1;transform:none}
 
   /* Buttons */
   .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-head);font-weight:600;font-size:1.02rem;padding:14px 42px;border-radius:var(--radius-pill);border:none;cursor:pointer;color:#fff;background:linear-gradient(180deg,#0e4cc0 0%,#003595 100%);box-shadow:0 10px 24px rgba(0,53,149,.26);outline:1.5px solid rgba(125,168,226,.7);outline-offset:4px;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
@@ -98,203 +102,37 @@
   .btn-ghost:hover{background:var(--blue);color:#fff}
   .btn .ln{font-weight:600}
 
-  /* Components CSS */
+  /* Header */
   .topbar{position:sticky;top:0;z-index:50;background:var(--blue);color:#fff}
   .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
   .brand{display:flex;align-items:center}
   .brand img{height:50px;width:auto;display:block}
   .topbar .btn{padding:10px 24px;font-size:.92rem}
+
+  /* Hero */
   .hero{position:relative;background:linear-gradient(180deg,#fff 0%,var(--tint-blue2) 60%,var(--tint-blue) 100%);overflow:hidden}
   .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.55}
   .hero::before{width:240px;height:240px;background:#d4e6ff;top:-60px;left:-60px}
   .hero::after{width:300px;height:300px;background:#cfe0ff;bottom:-90px;right:-70px}
   .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:52px;padding-bottom:58px}
-  @media (max-width:768px){.hero .wrap{grid-template-columns:1fr;text-align:center;padding-top:32px;padding-bottom:38px}}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--tint-blue);border:1px solid #cfe0ff;color:var(--blue);font-family:var(--font-head);font-weight:600;font-size:.86rem;padding:7px 16px;border-radius:var(--radius-pill);box-shadow:var(--shadow-sm)}
-  @media (max-width:768px){.eyebrow{margin:0 auto}}
   .hero h1{font-size:2.6rem;font-weight:700;margin:18px 0 8px;color:var(--heading)}
-  @media (max-width:480px){.hero h1{font-size:2.0rem}}
   .hero h1 .o{color:var(--green-d)}
-  .hero .lead{font-size:1.25rem;color:var(--text);margin-bottom:12px;font-weight:600}
-  .hero .sub{display:block;font-size:1.02rem;color:var(--muted);margin-bottom:32px}
-  .cta-row{display:flex;align-items:center;gap:16px}
-  @media (max-width:768px){.cta-row{justify-content:center;flex-direction:column;gap:12px}}
-  .hero-figure{position:relative}
-  .promo-badge{position:absolute;top:10px;right:10px;z-index:10;background:var(--red);color:#fff;border-radius:50%;width:110px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:700;box-shadow:0 8px 20px rgba(220,53,69,.35);border:2px solid #fff;transform:rotate(8deg)}
-  .promo-badge b{font-size:1.5rem;line-height:1}
-  .promo-badge small{font-size:.85rem;opacity:.9}
-  .imgslot{position:relative;background:var(--tint-gray);border-radius:var(--radius-card);overflow:hidden;border:1px dashed #ddd}
-  .imgslot img{width:100%;height:auto;object-fit:cover}
-  .imgslot .ph{padding:60px 20px;text-align:center;color:var(--muted);font-size:.9rem}
-  .imgslot .ph .ic{font-size:2.5rem;display:block;margin-bottom:10px}
-  .imgslot .ph code{display:block;margin-top:8px;background:rgba(0,0,0,.05);padding:2px 8px;border-radius:4px;font-family:monospace;font-size:.8rem;display:inline-block}
-  .imgslot img:not([src=""]), .imgslot img[src] { display:block }
-  .imgslot.is-missing img { display:none !important }
-  .imgslot:not(.is-missing) .ph { display:none !important }
-
-  /* Problem Section */
-  .problem{background:var(--blue);color:#fff}
-  .problem .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:center}
-  @media (max-width:768px){.problem .wrap{grid-template-columns:1fr;text-align:center}}
-  .problem h2{font-size:2.1rem;margin-bottom:20px;color:#fff}
-  @media (max-width:480px){.problem h2{font-size:1.75rem}}
-  .problem .hl{color:var(--gold)}
-  .problem p{font-size:1.15rem;color:rgba(255,255,255,.9)}
-
-  /* Causes Section */
-  .causes{background:var(--tint-blue3)}
-  .kicker{display:inline-block;font-family:var(--font-head);font-weight:700;font-size:.88rem;text-transform:uppercase;letter-spacing:1px;color:var(--blue);background:var(--tint-blue);padding:5px 14px;border-radius:var(--radius-pill);border:1px solid #cfe0ff;margin-bottom:16px}
-  .causes .h2{font-size:2.2rem;color:var(--heading);margin-bottom:14px}
-  @media (max-width:480px){.causes .h2{font-size:1.8rem}}
-  .lead-muted{max-width:720px;margin:0 auto 42px;color:var(--muted);font-size:1.08rem}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
-  .card{background:var(--white);padding:28px;border-radius:var(--radius-card);box-shadow:0 4px 20px rgba(0,0,0,.04);border:1px solid #eef2f6;transition:transform .25s ease}
-  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-card)}
-  .card .cap{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-  .card h3{font-size:1.15rem;color:var(--heading);font-weight:700}
-  .card p{font-size:.96rem;color:var(--muted);line-height:1.6}
-  .badge{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
-  .b-dha{background:var(--tint-blue);color:var(--blue)}
-  .b-gut{background:var(--tint-green);color:var(--green-d)}
-  .b-iron{background:var(--tint-red);color:var(--red)}
-  .b-sleep{background:var(--tint-cream);color:#b68133}
-
-  /* Shift Section */
-  .shift{background:linear-gradient(135deg,#fff 0%,var(--tint-blue) 100%);text-align:center;border-top:1px solid #e8f1ff}
-  .shift h2{font-size:2.2rem;color:var(--heading);margin-top:10px;margin-bottom:14px}
-  .shift .o{color:var(--green-d)}
-  .shift p{max-width:640px;margin:0 auto;font-size:1.1rem;color:var(--muted)}
-
-  /* Mech Section */
-  .mech .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:42px;align-items:center}
-  @media (max-width:768px){.mech .wrap{grid-template-columns:1fr}}
-  .mech h2{font-size:2.1rem;color:var(--heading);margin-top:10px;margin-bottom:32px}
-  .mech-list{display:flex;flex-direction:column;gap:20px}
-  .mech-item{display:flex;gap:16px;background:var(--tint-blue2);padding:18px;border-radius:var(--radius-card);border:1px solid #eef5ff}
-  .mech-item .n{width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size.95rem;flex-shrink:0}
-  .mech-item h4{font-size:1.1rem;color:var(--heading);margin-bottom:4px}
-  .mech-item p{font-size:.95rem;color:var(--muted);line-height:1.5}
-
-  /* Ingredients Base */
-  .ingredient{background:#fff}
-  .ingredient .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-  @media (max-width:768px){.ingredient .wrap{grid-template-columns:1fr;text-align:center}.ingredient .wrap.rev{direction:rtl}.ingredient .wrap.rev > *{direction:ltr}}
-  .ingredient h2{font-size:2.1rem;color:var(--heading);margin-top:12px;margin-bottom:18px}
-  @media (max-width:480px){.ingredient h2{font-size:1.75rem}}
-  .ingredient p{font-size:1.05rem;color:var(--muted);line-height:1.65}
-  .pill{display:inline-block;font-family:var(--font-head);font-weight:600;font-size:.84rem;padding:5px 14px;border-radius:var(--radius-pill)}
-  .ing-cream{background:var(--tint-cream)}.ing-cream .pill{background:#f3e5d0;color:#875a1a}
-  .ing-sky{background:var(--tint-blue2)}.ing-sky .pill{background:#d6e6ff;color:var(--blue)}
-  .ing-mint{background:var(--tint-green2)}.ing-mint .pill{background:#cdfae0;color:var(--green-d)}
-
-  /* Trust Section */
-  .trust{background:var(--blue);color:#fff}
-  .trust .h2{font-size:2.2rem;color:#fff;margin-bottom:14px}
-  .award-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:860px;margin:42px auto 0}
-  @media (max-width:600px){.award-grid{grid-template-columns:1fr}}
-  .award-card{background:rgba(255,255,255,.07);padding:24px;border-radius:var(--radius-card);border:1px solid rgba(255,255,255,.1)}
-  .award-card h4{font-size:1.15rem;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-  .award-card p{font-size:.98rem;color:rgba(255,255,255,.85);line-height:1.6}
-  .chk{color:var(--green)}
-
-  /* Social Section */
-  .social{background:var(--tint-blue3)}
-  .social .h2{font-size:2.2rem;color:var(--heading);margin-bottom:14px}
-  .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:860px;margin:32px auto}
-  @media (max-width:600px){.proof-grid{grid-template-columns:1fr}}
-  .reviews{max-width:760px;margin:42px auto 0;display:flex;flex-direction:column;gap:18px}
-  .review{background:#fff;padding:22px;border-radius:var(--radius-card);box-shadow:0 4px 15px rgba(0,0,0,.03);border:1px solid #eef2f6}
-  .rv-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-  .ava{width:36px;height:36px;border-radius:50%;background:var(--tint-blue);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem}
-  .who{display:flex;flex-direction:column;font-size:.92rem;line-height:1.3}
-  .who span{color:var(--muted);font-size:.82rem}
-  .stars{margin-left:auto;color:#ffc107;letter-spacing:1px;font-size:.92rem}
-  .review p{font-size:.98rem;color:var(--text);line-height:1.6}
-
-  /* Offer Section */
-  .offer{background:linear-gradient(180deg,var(--white) 0%,var(--tint-blue2) 100%)}
-  .offer .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
-  @media (max-width:768px){.offer .wrap{grid-template-columns:1fr}}
-  .offer h2{font-size:2.3rem;color:var(--heading);margin-top:10px;margin-bottom:16px}
-  @media (max-width:480px){.offer h2{font-size:1.85rem}}
-  .offer p{font-size:1.1rem;color:var(--muted);line-height:1.6}
-  .price-box{background:#fff;padding:40px;border-radius:24px;box-shadow:var(--shadow-card);border:1px solid #e5eefc;position:relative;overflow:hidden}
-  @media (max-width:480px){.price-box{padding:26px}}
-  .price-box::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--blue)}
-  .price-box .tag{display:inline-block;background:var(--tint-red);color:var(--red);font-family:var(--font-head);font-weight:700;font-size:.88rem;padding:4px 14px;border-radius:var(--radius-pill);margin-bottom:14px}
-  .price-box .price{font-family:var(--font-head);font-weight:700;font-size:3.5rem;color:var(--blue);line-height:1}
-  .price-box .price small{font-size:1.3rem;font-weight:600;color:var(--muted)}
-  .price-box .note{font-size:1.02rem;color:var(--green-d);font-weight:600;margin-top:4px;margin-bottom:24px}
-  .price-box ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;border-top:1px solid #edf2f9;padding-top:20px}
-  .price-box li{font-size:.98rem;color:var(--text);display:flex;align-items:center;gap:10px}
-  .price-box li::before{content:"✓";color:var(--green-d);font-weight:700;font-size:1.1rem}
-
-  /* Final Section */
-  .final{background:var(--footer);color:#fff;text-align:center;position:relative;overflow:hidden}
-  .final h2{font-size:2.4rem;color:#fff;margin-top:10px;margin-bottom:14px}
-  @media (max-width:480px){.final h2{font-size:1.9rem}}
-  .final p{font-size:1.15rem;color:rgba(255,255,255,.85);max-width:580px;margin:0 auto 36px}
-  .final-product{max-width:340px;margin:0 auto 36px}
-
-  /* Footer */
-  .footer{background:#021533;color:rgba(255,255,255,.75);font-size:.92rem;padding:52px 0 94px;border-top:1px solid rgba(255,255,255,.06)}
-  .fcols{display:grid;grid-template-columns:1.2fr .8fr 1fr;gap:42px;margin-bottom:38px}
-  @media (max-width:768px){.fcols{grid-template-columns:1fr;gap:32px}}
-  .fbrand{margin-bottom:16px}
-  .footer h4{color:#fff;font-size:1.1rem;margin-bottom:16px;font-weight:600}
-  .footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-  .footer ul a:hover{color:#fff;text-decoration:underline}
-  .fcontact b{color:#fff}
-  .fbottom{border-top:1px solid rgba(255,255,255,.07);padding-top:24px;font-size:.82rem;line-height:1.7;color:rgba(255,255,255,.5)}
-
-  /* Chat FAB floating elements */
-  .chat-fab{position:fixed;bottom:84px;right:24px;z-index:90;display:flex;align-items:center;gap:12px;pointer-events:none}
-  @media (max-width:480px){.chat-fab{bottom:88px;right:16px}}
-  .chat-fab > *{pointer-events:auto}
-  .chat-btn{width:56px;height:56px;border-radius:50%;background:#06c755;box-shadow:0 6px 20px rgba(6,199,85,.4);display:flex;align-items:center;justify-content:center;transition:transform .2s ease;border:none;cursor:pointer}
-  .chat-btn:hover{transform:scale(1.06)}
-  .chat-btn svg{width:28px;height:28px}
-  .chat-bubble{background:#fff;color:var(--text);padding:10px 16px;border-radius:14px;font-size:.88rem;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.12);border:1px solid #eef2f6;white-space:nowrap;position:relative;animation:floatbubble 2.5s infinite ease-in-out}
-  .chat-bubble small{display:block;font-weight:400;color:var(--muted);font-size:.78rem}
-  .chat-bubble::after{content:"";position:absolute;right:-6px;top:50%;transform:translateY(-50%) rotate(45deg);width:12px;height:12px;background:#fff;border-right:1px solid #eef2f6;border-top:1px solid #eef2f6}
-  @media (max-width:600px){.chat-bubble{display:none}}
-  @keyframes floatbubble{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-
-  /* Sticky Bar */
-  .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#fff;padding:12px 20px;box-shadow:0 -6px 20px rgba(0,0,0,.08);z-index:85;display:flex;justify-content:center;border-top:1px solid #edf3f9}
-  .sticky-cta .btn{width:100%;max-width:540px;padding:12px 32px;font-size:1.05rem}
-  </style>
-</head>
-<body>
-
-<header class="topbar">
-  <div class="wrap">
-    <div class="brand"><img src="logo.png" alt="Promom"></div>
-    <a href="#order" class="btn btn-white" data-line><span class="ln">สั่งซื้อ / แชท LINE</span></a>
+  .hero .lead"><strong>วิตามินเสริมภูมิคุ้มกัน ลดโอกาสติดเชื้อ ลดความรุนแรง ลดระยะเวลาเจ็บป่วย และลดภูมิแพ้</strong></p>
+  <span class="sub">ดูแลภูมิคุ้มกันครบกลไก พร้อมงานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาฯ</span>
+  <div class="cta-row">
+    <a href="#order" class="btn" data-line><span class="ln">สนใจคลิก — แชท LINE</span></a>
+    <a href="https://promom.co.th/" class="btn btn-ghost" target="_blank" rel="noopener">Official Website</a>
   </div>
-</header>
-
-<main>
-<section class="section hero">
-  <div class="wrap">
-    <div class="hero-content">
-      <span class="eyebrow">นวัตกรรมเสริมภูมิคุ้มกันเด็ก</span>
-      <h1>Multi-IMMU 24<br><span class="o">Multi-IMMU 24+</span></h1>
-      <p class="lead">วิตามินเสริมภูมิคุ้มกัน ลดโอกาสติดเชื้อ ลดความรุนแรง ลดระยะเวลาเจ็บป่วย และลดภูมิแพ้</p>
-      <span class="sub">ดูแลภูมิคุ้มกันครบกลไก พร้อมงานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาฯ</span>
-      <div class="cta-row">
-        <a href="#order" class="btn" data-line><span class="ln">สนใจคลิก — แชท LINE</span></a>
-        <a href="https://promom.co.th/" class="btn btn-ghost" target="_blank" rel="noopener">Official Website</a>
-      </div>
-    </div>
-    <div class="hero-figure reveal">
-      <div class="promo-badge">ซื้อ&nbsp;1<b>แถม 1</b><small>1,499.-</small></div>
-      <figure class="imgslot">
-        <img src="page-01.png" alt="กล่องผลิตภัณฑ์ Multi-IMMU 24 และ Multi-IMMU 24+" onerror="this.parentElement.classList.add('is-missing')">
-        <div class="ph"><span class="ic">🖼️</span><b>ภาพสินค้า Multi-IMMU 24 &amp; 24+</b><code>page-01.png</code></div>
-      </figure>
-    </div>
-  </div>
+</div>
+<div class="hero-figure reveal">
+  <div class="promo-badge">ซื้อ&nbsp;1<b>แถม 1</b><small>1,499.-</small></div>
+  <figure class="imgslot">
+    <img src="page-01.png" alt="กล่องผลิตภัณฑ์ Multi-IMMU 24 และ Multi-IMMU 24+" onerror="this.parentElement.classList.add('is-missing')">
+    <div class="ph"><span class="ic">🖼️</span><b>ภาพสินค้า Multi-IMMU 24 &amp; 24+</b><code>page-01.png</code></div>
+  </figure>
+</div>
+</div>
 </section>
 
 <section class="section problem" id="why">
@@ -307,7 +145,7 @@
     </div>
     <div class="reveal">
       <h2>ปัญหาลูก<span class="hl">ป่วยบ่อย ติดเชื้อง่าย</span> เป็นหวัดแทบทุกเดือน</h2>
-      <p>อาจไม่ใช่เพราะลูกเกิดมาไม่แข็งแรง แต่เพราะ<strong style="color:var(--gold)">ภูมิคุ้มกันยังไม่ได้รับการดูแลให้ครบกลไก</strong></p>
+      <p>อาจไม่ใช่เพราะลูกเกิดมาไม่แข็งแรง แต่เพราะ<strong style="color:#fff">ภูมิคุ้มกันยังไม่ได้รับการดูแลให้ครบกลไก</strong></p>
     </div>
   </div>
 </section>
@@ -323,15 +161,15 @@
         <p>เมื่อเยื่อบุทางเดินหายใจและลำไส้ไม่แข็งแรง เชื้อโรคและมลพิษจะเข้าสู่ร่างกายได้ง่ายขึ้น ทำให้ลูกป่วยซ้ำ เป็นหวัดบ่อย หรืออาการลากยาวกว่าที่ควร</p>
       </div>
       <div class="card reveal">
-        <div class="cap"><span class="badge b-gut">🦠</span><h3>จุลินทรีย์ดีในลำไส้เสียสมดุล</h3></div>
+        <div class="cap"><span class="badge b-iron">🦠</span><h3>จุลินทรีย์ดีในลำไส้เสียสมดุล</h3></div>
         <p>ลำไส้เป็นแหล่งสำคัญของภูมิคุ้มกัน หากจุลินทรีย์ดีไม่สมดุล ระบบภูมิจะตอบสนองได้ไม่ดี เด็กจึงป่วยง่าย ภูมิแพ้ง่าย และฟื้นตัวช้าขึ้น</p>
       </div>
       <div class="card reveal">
-        <div class="cap"><span class="badge b-iron">🩸</span><h3>เม็ดเลือดขาวต้องการสารอาหารสำคัญ</h3></div>
+        <div class="cap"><span class="badge b-sleep">🩸</span><h3>เม็ดเลือดขาวต้องการสารอาหารสำคัญ</h3></div>
         <p>เม็ดเลือดขาวคือกองกำลังหลักของร่างกาย การเสริมวิตามิน แร่ธาตุ และสารอาหารที่เหมาะสม ช่วยให้ร่างกายต่อสู้เชื้อโรคได้ดีขึ้น</p>
       </div>
       <div class="card reveal">
-        <div class="cap"><span class="badge b-sleep">💥</span><h3>ร่างกายอักเสบง่ายเกินไป</h3></div>
+        <div class="cap"><span class="badge b-gut">💥</span><h3>ร่างกายอักเสบง่ายเกินไป</h3></div>
         <p>เมื่อร่างกายอักเสบมากเกินไป อาการป่วยอาจรุนแรงขึ้นหรือหายช้า การดูแลภูมิที่ดีจึงต้องช่วยให้ร่างกายตอบสนองอย่างสมดุล ไม่อ่อนแอและไม่อักเสบเกินจำเป็น</p>
       </div>
     </div>
@@ -358,7 +196,7 @@
       <span class="kicker">ผลิตภัณฑ์เสริมอาหารเสริมภูมิคุ้มกันเด็ก</span>
       <h2 class="h2">Multi-IMMU 24 / 24+ ดูแลภูมิคุ้มกันเด็ก ครบกลไก</h2>
       <div class="mech-list">
-        <div class="mech-item"><span class="n">1</span><div><h4>ลดโอกาสเชื้อลงปอด</h4><p>ช่วยดูแลด่านป้องกันสำคัญของร่างกาย ให้ลูกพร้อมรับมือเชื้อโรคและมลพิษ</p></div></div>
+        <div class="mech-item"><span class="n">1</span><div><h4>ลดโอกาสเชื้อลงปอด</h4><p>ช่วยดูแลด่านป้องกันสำคัญ of ร่างกาย ให้ลูกพร้อมรับมือเชื้อโรคและมลพิษ</p></div></div>
         <div class="mech-item"><span class="n">2</span><div><h4>ร่างกายต่อสู้เชื้อโรคได้ดี</h4><p>เติมสารอาหารสำคัญต่อภูมิคุ้มกัน ช่วยให้ติดเชื้อยากขึ้นและฟื้นตัวไวขึ้น</p></div></div>
         <div class="mech-item"><span class="n">3</span><div><h4>สร้างสมดุลลำไส้ เติมภูมิคุ้มกัน</h4><p>ดูแลจุลินทรีย์ดีและระบบลำไส้ ซึ่งเป็นฐานสำคัญของภูมิคุ้มกันเด็ก</p></div></div>
         <div class="mech-item"><span class="n">4</span><div><h4>ลดภูมิแพ้ รับมือ PM2.5</h4><p>ช่วยให้ร่างกายรับมือฝุ่น มลพิษ และการอักเสบได้อย่างสมดุลมากขึ้น</p></div></div>
@@ -383,18 +221,18 @@
   </div>
 </section>
 
-<section class="section ingredient ing-sky rev">
+<section class="section ingredient ing-sky">
   <div class="wrap">
+    <div class="reveal">
+      <span class="pill">ดูแลทางเดินหายใจแข็งแรง</span>
+      <h2>ดูแลทางเดินหายใจแข็งแรง</h2>
+      <p>Multi-IMMU 24/24+ ถูกออกแบบให้ช่วยดูแลภูมิคุ้มกันหลายด่าน ไม่ใช่แค่เสริมสารอาหารเดี่ยว ๆ แต่ช่วยให้ร่างกายลูกพร้อมรับมือเชื้อโรค ลดโอกาสอาการรุนแรง และดูแลการอักเสบอย่างสมดุล</p>
+    </div>
     <div class="figc reveal">
       <figure class="imgslot">
         <img src="page-04.png" alt="Multi-IMMU 24/24+ ดูแลภูมิคุ้มกันเด็ก" onerror="this.parentElement.classList.add('is-missing')">
         <div class="ph"><span class="ic">🖼️</span><b>ภาพดูแลทางเดินหายใจแข็งแรง</b><code>page-04.png</code></div>
       </figure>
-    </div>
-    <div class="reveal">
-      <span class="pill">ดูแลทางเดินหายใจแข็งแรง</span>
-      <h2>ดูแลทางเดินหายใจแข็งแรง</h2>
-      <p>Multi-IMMU 24/24+ ถูกออกแบบให้ช่วยดูแลภูมิคุ้มกันหลายด่าน ไม่ใช่แค่เสริมสารอาหารเดี่ยว ๆ แต่ช่วยให้ร่างกายลูกพร้อมรับมือเชื้อโรค ลดโอกาสอาการรุนแรง และดูแลการอักเสบอย่างสมดุล</p>
     </div>
   </div>
 </section>
@@ -418,7 +256,7 @@
 <section class="section trust">
   <div class="wrap center">
     <span class="kicker reveal" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:var(--gold)">การันตีคุณภาพ</span>
-    <h2 class="h2 reveal">มั่นใจในคุณภาพมาตรฐานระดับพรีเมียม</h2>
+    <h2 class="h2 reveal">พิสูจน์คุณภาพด้วยงานวิจัยร่วมกับคณะเภสัชศาสตร์ จุฬาฯ</h2>
     <p class="lead-muted reveal">Multi-IMMU 24/24+ ถูกพัฒนาเพื่อดูแลภูมิคุ้มกันเด็กอย่างครบกลไก พร้อมผลการทดสอบที่ช่วยเสริมความมั่นใจให้พ่อแม่</p>
     <figure class="imgslot reveal" style="margin-top:28px;max-width:760px;margin-left:auto;margin-right:auto">
       <img src="page-07.png" alt="งานวิจัย Multi-IMMU 24/24+ และคุณภาพผลิตภัณฑ์ Promom" onerror="this.parentElement.classList.add('is-missing')">
@@ -503,7 +341,6 @@
     <a href="#order" class="btn btn-white" data-line><span class="ln">แชท LINE Promom เลย</span></a>
   </div>
 </section>
-</main>
 
 <footer class="footer">
   <div class="wrap">
